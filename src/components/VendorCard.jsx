@@ -1,0 +1,26 @@
+function VendorCard() {
+    const vendor = {
+        name: "S01 Ayam Gepuk",
+        location: "Mahallah Faruq, IIUM Gombak",
+        openHours: "8:00 AM - 10:00 PM",
+        isOpen: false,
+    };
+
+    return (
+        <article className="card vendor-card">
+            <div className = "thumb" aria-hidden="true">
+                {vendor.name.charAt(0)}
+            </div>
+            <div>
+                <h2>{vendor.name}</h2>
+                <p className = "muted">{vendor.location}</p>
+                <p className="muted">Open: {vendor.openHours}</p>
+                <span className={vendor.isOpen ? "status open" : "status closed"}>
+                    {vendor.isOpen ? "Open" : "Closed"}
+                </span> 
+            </div>
+        </article>
+    );
+} 
+
+export default VendorCard;

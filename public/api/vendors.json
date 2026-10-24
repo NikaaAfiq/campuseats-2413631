@@ -4,6 +4,7 @@
     "name": "Ayam Gepuk Top Global",
     "location": "Mahallah Bilal, Block C",
     "openHours": "10:00 AM - 8:00 PM",
+    "isOpen": true,
     "menu": [
       {
         "id": "item-1",
@@ -28,6 +29,46 @@
         "price": 6,
         "category": "Noodles",
         "available": false
+      },
+      {
+        "id": "item-4",
+        "name": "Maggi Goreng",
+        "description": "Fried maggi noodles",
+        "price": 7,
+        "category": "Noodles",
+        "available": true
+      },
+      {
+        "id": "item-5",
+        "name": "Teh Ais",
+        "description": "Tea with condensed milk",
+        "price": 3,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "item-6",
+        "name": "Nasi Ayam Penyet",
+        "description": "Rice with fried chicken",
+        "price": 6,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "item-7",
+        "name": "Coffee",
+        "description": "Caffeinated beverage",
+        "price": 6,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "item-8",
+        "name": "Mie Sup",
+        "description": "Noodles with chicken broth",
+        "price": 6,
+        "category": "Noodles",
+        "available": true
       }
     ]
   },
@@ -39,7 +80,7 @@
     "isOpen": true,
     "menu": [
       {
-        "id": "ami-1",
+        "id": "item-1",
         "name": "Nasi Ayam Penyet",
         "description": "Smashed fried chicken with sambal and rice",
         "price": 9,
@@ -47,11 +88,35 @@
         "available": true
       },
       {
-        "id": "ami-2",
+        "id": "item-2",
         "name": "Air Bandung",
         "description": "Rose syrup with milk",
         "price": 3,
         "category": "Drinks",
+        "available": true
+      },
+            {
+        "id": "item-3",
+        "name": "Nasi Ayam Penyet",
+        "description": "Rice with fried chicken",
+        "price": 6,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "item-4",
+        "name": "Coffee",
+        "description": "Caffeinated beverage",
+        "price": 6,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "item-5",
+        "name": "Mie Sup",
+        "description": "Noodles with chicken broth",
+        "price": 6,
+        "category": "Noodles",
         "available": true
       }
     ]

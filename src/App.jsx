@@ -6,6 +6,7 @@ import CartPage from "./components/CartPage.jsx";
 import { Loading, ErrorMessage } from "./components/Status.jsx";
 import CheckoutForm from "./components/CheckoutForm.jsx";
 import { useEffect, useState } from "react";
+import CategoryFilter from "./components/CategoryFilter.jsx";
 
 function App() {
   // state
@@ -17,6 +18,7 @@ function App() {
   const [view, setView] = useState("menu");
   const [cart, setCart] = useState([]);
   const [lastOrder, setLastOrder] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   //useEffect
   useEffect(() => {
@@ -45,8 +47,16 @@ function App() {
   // derived state
   const selectedVendor =
     vendors.find((v) => v.id === selectedVendorId) ?? vendors[0];
+    const categories = selectedVendor
+    ? ["All", ...new Set(selectedVendor.menu.map((i) => i.category))]
+    : ["All"];
+  const visibleItems = selectedVendor
+    ? selectedVendor.menu.filter(
+      (i) => selectedCategory === "All" || i.category === selectedCategory):
+    [];
   const cartCount = cart.reduce((sum, l) => sum + l.qty, 0);
   const total = cart.reduce((sum, l) => sum + l.item.price * l.qty, 0);
+
 
   // handlers
   function handleAddToCart(item) {
@@ -112,7 +122,10 @@ function App() {
                 key={vendor.id}
                 vendor={vendor}
                 isSelected={vendor.id === selectedVendor?.id}
-                onSelect={setSelectedVendorId}
+                onSelect={(id) => {
+                  setSelectedVendorId(id);
+                  setSelectedCategory("All");
+                }}
               />
             ))}
           </div>
@@ -120,7 +133,12 @@ function App() {
         {selectedVendor && (
           <section>
             <h2 className="section-title">Menu: {selectedVendor.name}</h2>
-            <MenuList items={selectedVendor.menu} onAdd={handleAddToCart} />
+            <CategoryFilter
+            categories={categories}
+            selected={selectedCategory}
+            onSelect={setSelectedCategory}
+            />
+            <MenuList items={visibleItems} onAdd={handleAddToCart} />
           </section>
         )}
       </>

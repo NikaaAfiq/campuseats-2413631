@@ -7,6 +7,7 @@ export function Loading() {
 export function ErrorMessage({ message, onRetry }) {
     return (
         <div className="error-message" role="alert">
+            {message}
             <button className="btn" onClick={onRetry}>Retry</button>
         </div>
     )

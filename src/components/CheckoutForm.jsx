@@ -45,7 +45,7 @@ function CheckoutForm({ onPlaceOrder }) {
   }
 
   return (
-    <form className="card-form" onSubmit={handleSubmit} noValidate>
+    <form className="card form" onSubmit={handleSubmit} noValidate>
       <h3>Checkout</h3>
 
       <label htmlFor="name">Name</label>

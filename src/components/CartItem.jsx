@@ -6,12 +6,12 @@ function CartItem({ line, onChangeQty, onRemove }) {
         <li className="cart-line">
             <div>
                 <p className="cart-name">{item.name}</p>
-                <p className="muted" >${item.price.toFixed(2)} each</p>
+                <p className="muted" >RM {item.price.toFixed(2)} each</p>
             </div>
             <div className="qty">
                 <button type="button" className="btn" onClick={() => onChangeQty(item, qty - 1)}>-</button>
                 <span>{qty}</span>
-                <button type="button" className="btn" onClick={() => {/* TODO: add one */}}>+</button>
+                <button type="button" className="btn" onClick={() => onChangeQty(item, qty + 1)}>+</button>
 
             </div>
             <p className="line-total">RM {(item.price * qty).toFixed(2)}</p>

@@ -5,7 +5,7 @@ function CategoryFilter ({ categories, selected, onSelect}) {
                 <button
                     key={c}
                     type="button"
-                    className={'btn ${c === selected ? "selected" : ""}'}
+                    className={`btn ${c === selected ? "selected" : ""}`}
                     onClick={() => onSelect(c)}
                 >
                     {c}

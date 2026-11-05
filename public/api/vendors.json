@@ -7,7 +7,7 @@
     "isOpen": true,
     "menu": [
       {
-        "id": "item-1",
+        "id": "bilal-item-1",
         "name": "Ayam Gepuk",
         "description": "Fried chicken with sambal",
         "price": 8,
@@ -15,7 +15,7 @@
         "available": true
       },
       {
-        "id": "item-2",
+        "id": "bilal-item-2",
         "name": "Nasi Goreng",
         "description": "Fried rice with chicken",
         "price": 7,
@@ -23,7 +23,7 @@
         "available": true
       },
       {
-        "id": "item-3",
+        "id": "bilal-item-3",
         "name": "Mie Goreng",
         "description": "Fried noodles",
         "price": 6,
@@ -31,7 +31,7 @@
         "available": false
       },
       {
-        "id": "item-4",
+        "id": "bilal-item-4",
         "name": "Maggi Goreng",
         "description": "Fried maggi noodles",
         "price": 7,
@@ -39,7 +39,7 @@
         "available": true
       },
       {
-        "id": "item-5",
+        "id": "bilal-item-5",
         "name": "Teh Ais",
         "description": "Tea with condensed milk",
         "price": 3,
@@ -47,7 +47,7 @@
         "available": true
       },
       {
-        "id": "item-6",
+        "id": "bilal-item-6",
         "name": "Nasi Ayam Penyet",
         "description": "Rice with fried chicken",
         "price": 6,
@@ -55,7 +55,7 @@
         "available": true
       },
       {
-        "id": "item-7",
+        "id": "bilal-item-7",
         "name": "Coffee",
         "description": "Caffeinated beverage",
         "price": 6,
@@ -63,7 +63,7 @@
         "available": true
       },
       {
-        "id": "item-8",
+        "id": "bilal-item-8",
         "name": "Mie Sup",
         "description": "Noodles with chicken broth",
         "price": 6,
@@ -80,15 +80,15 @@
     "isOpen": true,
     "menu": [
       {
-        "id": "item-1",
-        "name": "Nasi Ayam Penyet",
+        "id": "aminah-item-1",
+        "name": "Nasi Ayam Gepuk",
         "description": "Smashed fried chicken with sambal and rice",
         "price": 9,
         "category": "Rice",
         "available": true
       },
       {
-        "id": "item-2",
+        "id": "aminah-item-2",
         "name": "Air Bandung",
         "description": "Rose syrup with milk",
         "price": 3,
@@ -96,7 +96,7 @@
         "available": true
       },
             {
-        "id": "item-3",
+        "id": "aminah-item-3",
         "name": "Nasi Ayam Penyet",
         "description": "Rice with fried chicken",
         "price": 6,
@@ -104,7 +104,7 @@
         "available": true
       },
       {
-        "id": "item-4",
+        "id": "aminah-item-4",
         "name": "Coffee",
         "description": "Caffeinated beverage",
         "price": 6,
@@ -112,7 +112,7 @@
         "available": true
       },
       {
-        "id": "item-5",
+        "id": "aminah-item-5",
         "name": "Mie Sup",
         "description": "Noodles with chicken broth",
         "price": 6,
